@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerar QR-Code</title>
+  <!-- FONTE POPPINS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- JS -->
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+      <nav class="nav-inner">
+      <a href="#" id="title">
+          <h1>Gerador | QR Code</h1>
+      </a>
+
+      <ul id="nav-list">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>Ferramentas</li></a>
+        <a href="#"><li>Premium</li></a>
+
+          <button id="btn-login">
+            Entrar
+          </button>
+      </ul>
+
+      </nav>
+  </header>
+
+  <!-- Main -->
+  <div class="container">
+      <!-- Imagem QR Code -->
+      <main id="result">
+          <H2>QRCODE GERADO</H2>
+
+          <img src="assets/qrcode.png" alt="qr-main">
+
+          <p>Baixe aqui seu QRCode</p>
+          <button>DOWNLOAD</button>
+      </main>
+
+      <!-- Geração QR Code -->
+      <aside class="config">
+        <!-- N ESQUEÇA DAS DIVS -->
+        <div id="qr-header">
+            <h2>Gerador de QR Code</h2>
+            <p>Insira sua URL ou texto, para criar um QR Code</p>
+        </div>
+
+          <div id="qr-input">
+            <input type="text" placeholder="Digite a URL ou Texto">
+            <button>Criar QR Code</button>
+          </div>
+
+          <div id="qr-code">
+            <img src="assets/qrcode.png" alt="qr-main">
+          </div>
+      </aside>
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer>
+      <nav id="footer">
+        <h2>CGenerate</h2>
+        <p>2024 &copy; CGenerate</p>
+      </nav>
+  </footer>
+</body>
+</html>
