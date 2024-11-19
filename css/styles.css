@@ -5,6 +5,7 @@
     font-family: Roboto;
 }
 
+/* HEADER */
 .nav-inner {
     display: flex;
     align-items: center;
@@ -45,15 +46,25 @@
     opacity: .7;
     transition: .2s;
 }
-/* HEADER */
 
+/* MAIN */
 .container {
     display: flex;
     gap: 50px;
     padding-top: 50px;
+    height: 79vh;
 }
 
-#result {
+/* RESULTADO */
+.result {
+    display: none;
+}
+
+.result .config {
+    border: none;
+}
+
+.result.active {
     text-align: center;
     display: inline-block;
     align-items: center;
@@ -63,7 +74,25 @@
     padding: 20px;
 }
 
+/* ASIDE */
 .config {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: -50px;
+    margin: 0 auto;
+    padding-top: 25px;
+    border: 1px solid #000;
+    /* EXIBITR QR CODE E ESCONDER */
+    transition: 0.2s;
+    height: 260px;
+}
+
+.config.active {
     height: 100%;
     display: inline-block;
     text-align: center;
@@ -128,8 +157,17 @@
 #qr-code {
     display: flex;
     opacity: 0;
+    border: 1px solid #ccc;
+    padding: 20px 0;
+    margin: 20px 15px;
+    justify-content: center;
+    border-radius: 5px;
+    transition: .5s;
 }
 
+.result #qr-code {
+    opacity: 1;
+}
 .config.active #qr-code {
     opacity: 1 ;
 }
