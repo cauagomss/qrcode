@@ -12,7 +12,7 @@
     justify-content: space-around;
     height: 12vh;
     background-color: #fff;
-    border-bottom: 3PX SOLID  #69FF00;
+    border-bottom: 3PX SOLID  #0c8a32;
 }
 
 .nav-inner a {
@@ -72,6 +72,34 @@
     width: 70%;
     background-size: cover;
     padding: 20px;
+}
+
+.result.active h2 {
+    font-size: 2.3rem;
+    font-weight: 1000px;
+    margin-bottom: 15px;
+}
+
+.result.active img {
+    margin-bottom: 15px;
+}
+
+.result.active p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.result.active a {
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    opacity: 0.9;
+    transition: 0.4s;
 }
 
 /* ASIDE */
